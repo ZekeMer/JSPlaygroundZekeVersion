@@ -4,11 +4,82 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JS Playground</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style/reset.css" />
+    <link rel="stylesheet" href="style/style.css" />
   </head>
   <body>
     <h1>JavaScript Playground</h1>
 
-    <script src="script.js"></script>
+    <hr />
+
+    <h2>1. Move The Thing</h2>
+    <h3>
+      Make the thing move from one box to the other when the button is clicked.
+    </h3>
+    <h4>
+      Bonus: Make it move back and forth every time the button is clicked.
+    </h4>
+    <div class="moveChallenge">
+      <div class="box" id="leftBlock"><div id="theThing">Hi!</div></div>
+      <div class="box" id="rightBlock"></div>
+    </div>
+
+    <div class="activate">
+      <button onclick="moveTheThing()">Move The Thing</button>
+    </div>
+    <hr />
+
+    <h2>2. Style This Text</h2>
+    <h3>
+      Change the color, font, and size of the text below when the button is
+      pressed.
+    </h3>
+    <div class="target">
+      <p id="fancyText">Hey look at this cool text!</p>
+    </div>
+    <div class="activate">
+      <button onclick="styleTheText()">Style!</button>
+    </div>
+
+    <hr />
+
+    <h2>3. Get the Form Values</h2>
+    <div>
+      <form action="#">
+        <div>
+          <label for="firstField">First Field: </label
+          ><input id="firstField" name="firstField" type="text" />
+        </div>
+        <div>
+          <label for="secondField">Second Field: </label
+          ><input id="secondField" name="secondField" type="color" />
+        </div>
+        <div>
+          <label for="thirdField">Third Field: </label>
+          <input name="thirdField" id="thirdField" type="checkbox" />
+        </div>
+      </form>
+    </div>
+
+    <div class="activate">
+      <button onclick="getFormValues()">Get Form Values</button>
+    </div>
+
+    <table class="results">
+      <tr>
+        <th>First Result:</th>
+        <td id="firstResult"></td>
+      </tr>
+      <tr>
+        <th>Second Result:</th>
+        <td id="secondResult"></td>
+      </tr>
+      <tr>
+        <th>Third Result:</th>
+        <td id="thirdResult"></td>
+      </tr>
+    </table>
+
+    <script src="scripts/script.js"></script>
   </body>
 </html>

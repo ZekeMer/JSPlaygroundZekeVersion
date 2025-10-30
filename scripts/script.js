@@ -9,3 +9,15 @@ function styleTheText(){
     // Your code here
 }
 
+function getFormValues(){
+    // Your code here
+}
+
+function countTheStuff(){
+    // Your code here
+}
+
+function addNewRow(){
+    // Your code here
+}
+

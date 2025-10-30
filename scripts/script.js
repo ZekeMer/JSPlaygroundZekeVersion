@@ -21,3 +21,6 @@ function addNewRow(){
     // Your code here
 }
 
+function yourBonusChallenge(){
+    // Your code here
+}

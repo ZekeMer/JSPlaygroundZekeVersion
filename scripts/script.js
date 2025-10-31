@@ -60,7 +60,34 @@ function styleTheText(){
 }
 
 function getFormValues(){
-    // Your code here
+//Get 1st
+    const textInput = document.getElementById("firstField");
+    let textValue = textInput.value;
+
+    let firstResult = document.getElementById("firstResult"); //this references the html id 'firstResult'
+
+    //innerHTML sets the value of 'firstResult' to 'textValue'
+    firstResult.innerHTML = textValue;
+
+//Get 2nd
+    const colorInput = document.getElementById("secondField");
+    let colorValue = colorInput.value;
+
+    let secondResult = document.getElementById("secondResult");
+
+    secondResult.innerHTML = colorValue;
+
+//Get 3rd
+    const checkInput = document.getElementById("thirdField");
+    let checkValue = checkInput.checked;
+
+    let thirdResult = document.getElementById("thirdResult");
+
+    if (checkValue === false) { checkValue = "false / unchecked"; }
+    else if (checkValue === true) { checkValue = "true / checked"; }
+
+    thirdResult.innerHTML = checkValue;
+
 }
 
 function countTheStuff(){

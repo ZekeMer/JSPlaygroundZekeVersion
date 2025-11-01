@@ -91,7 +91,31 @@ function getFormValues(){
 }
 
 function countTheStuff(){
-    // Your code here
+//Count P
+    //.getElementsByTagName counts the amount of elemts of a specified type --> HTML collection
+    const amtOfP = document.getElementsByTagName("P");
+    let elementP = amtOfP.length;
+
+    let countOfP = document.getElementById("countOfP");
+
+    countOfP.innerHTML = elementP;
+
+//Count H2
+    const amtOfH2 = document.getElementsByTagName("H2");
+    let elementH2 = amtOfH2.length;
+
+    let countOfH2 = document.getElementById("countOfH2");
+
+    countOfH2.innerHTML = elementH2;
+
+//Count TD
+    const amtOfTD = document.getElementsByTagName("TD");
+    let elementTD = amtOfTD.length;
+    //return 9 valiues
+    let countOfTD = document.getElementById("countOfTD");
+
+    countOfTD.innerHTML = elementTD;
+    
 }
 
 function addNewRow(){

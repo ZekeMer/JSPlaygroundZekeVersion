@@ -115,11 +115,23 @@ function countTheStuff(){
     let countOfTD = document.getElementById("countOfTD");
 
     countOfTD.innerHTML = elementTD;
-    
+
 }
 
 function addNewRow(){
-    // Your code here
+   
+    const table = document.getElementById("addRowsTable");
+    
+    let row = table.rows; //Get all rows
+    let bottomRow = row[row.length-1]; //Get only the last row
+    let cell = bottomRow.cells[0]; //Get the cell in the last row
+    let cellValue = cell.innerHTML; // Get value of last cell for later use.'cellValue' is the old last cell and is a string.
+
+    let newRow = table.insertRow(-1); //new row at bottom
+    let insert = newRow.insertCell(0); // new cell in row
+
+    insert.innerHTML = Number(cellValue) + 1; //Increment value of original last row
+
 }
 
 function yourBonusChallenge(){
